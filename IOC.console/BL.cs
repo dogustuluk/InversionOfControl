@@ -10,9 +10,9 @@ namespace IOC.console
     {
         private IDAL _dal { get; set; } //burada "DAL" yerine "IDAL" yaparak Business Logic(BL)'in Data Access Layer(DAL) class'ı hakkında
                                         //bilgi sahibi öğrenmesini engellemiş olduk.
-        public BL()
+        public BL(IDAL dal)
         {
-            _dal = DALFactory.GetDal();
+            _dal = dal;
            
         }
 
