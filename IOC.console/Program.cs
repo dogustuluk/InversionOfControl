@@ -11,7 +11,8 @@ namespace IOC.console
             {
                 Console.WriteLine($"{x.Id}-{x.Name}-{x.Price}-{x.Stock}");
             });
-
+            //Console.WriteLine (bl.Hesapla());
+            
             Console.ReadLine();
         } 
     }

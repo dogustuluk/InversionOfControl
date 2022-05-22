@@ -8,7 +8,7 @@ namespace IOC.console
 {
      class DALFactory
     {
-        public static DAL GetDal()
+        public static IDAL GetDal() //burada soyut nesne örneğinden almalıyız.
         {
             return new DAL();
         }

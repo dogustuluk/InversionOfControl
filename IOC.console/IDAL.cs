@@ -9,5 +9,7 @@ namespace IOC.console
     interface IDAL
     {
         List<Product> GetProducts();
+
+        //int Hesapla();
     }
 }
