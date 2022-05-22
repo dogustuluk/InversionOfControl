@@ -6,7 +6,7 @@ namespace IOC.console
     {
         static void Main(string[] args)
         {
-            BL bl = new BL(new DAL());
+            BL bl = new BL(new OracleDAL());
             bl.GetProducts().ForEach(x =>
             {
                 Console.WriteLine($"{x.Id}-{x.Name}-{x.Price}-{x.Stock}");
