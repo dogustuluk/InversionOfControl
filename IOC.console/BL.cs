@@ -8,10 +8,10 @@ namespace IOC.console
 {
     class BL
     {
-        private DAL _dal { get; set; };
+        private DAL _dal { get; set; }
         public BL()
         {
-            _dal = new Dal();
+            _dal = new DAL();
         }
 
         public List<Product> GetProducts()
