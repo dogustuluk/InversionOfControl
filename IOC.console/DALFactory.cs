@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IOC.console
 {
-    internal class DALFactory
+     class DALFactory
     {
         public static DAL GetDal()
         {

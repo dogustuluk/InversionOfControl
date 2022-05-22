@@ -11,7 +11,7 @@ namespace IOC.console
         private DAL _dal { get; set; }
         public BL()
         {
-            _dal = new DALFactory.GetDal();
+            _dal = DALFactory.GetDal();
         }
 
         public List<Product> GetProducts()
