@@ -18,7 +18,7 @@ namespace IOC.console
                 new Product{Id = 4, Name = "Kalem 4", Price = 400, Stock = 40},
 
 
-            }
+            };
         }
     }
 }
