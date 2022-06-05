@@ -11,17 +11,18 @@ namespace InversionOfControl.web.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ISingletonDateService _singletonDateService;
+        //private readonly ISingletonDateService _singletonDateService;
+        private readonly IScopedDateService _scopedDateService;
 
-        public HomeController(ISingletonDateService singletonDateService)
+        public HomeController(IScopedDateService scopedDateService)
         {
-            _singletonDateService = singletonDateService;
+            _scopedDateService = scopedDateService;
         }
 
-        public IActionResult Index([FromServices]ISingletonDateService singletonDateService2)
+        public IActionResult Index([FromServices]IScopedDateService scopedDateService2)
         {
-            ViewBag.time1 = _singletonDateService.GetDateTime.TimeOfDay.ToString();
-            ViewBag.time2 = _singletonDateService.GetDateTime.TimeOfDay.ToString();
+            ViewBag.time1 = _scopedDateService.GetDateTime.TimeOfDay.ToString();
+            ViewBag.time2 = scopedDateService2.GetDateTime.TimeOfDay.ToString();
             return View();
         }
 

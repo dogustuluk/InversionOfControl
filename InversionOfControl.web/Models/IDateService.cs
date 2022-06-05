@@ -11,6 +11,6 @@ namespace InversionOfControl.web.Models
     }
     
      public interface ISingletonDateService: IDateService { }
-     interface IScopedDateService: IDateService { }
-     interface ITransientDateService: IDateService { }
+    public interface IScopedDateService: IDateService { }
+    public interface ITransientDateService: IDateService { }
 }
