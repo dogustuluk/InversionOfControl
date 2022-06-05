@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace InversionOfControl.web.Models
 {
-    interface IDateService
+    public interface IDateService
     {
         DateTime GetDateTime { get; }
     }
     
-     interface ISingletonDateService: IDateService { }
+     public interface ISingletonDateService: IDateService { }
      interface IScopedDateService: IDateService { }
      interface ITransientDateService: IDateService { }
 }
